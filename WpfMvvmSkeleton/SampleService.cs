@@ -13,13 +13,6 @@ namespace WpfMvvmSkeleton.Services
     // ViewModel constructor — that makes unit-testing trivial because
     // you can swap in a fake implementation.
 
-    public interface ISampleService
-    {
-        Task<List<SampleItem>> GetItemsAsync();
-        Task<bool>             SaveItemAsync(SampleItem item);
-        Task<bool>             DeleteItemAsync(int id);
-    }
-
     public class SampleService : ISampleService
     {
         // ── Replace the bodies below with real DB / API calls ──────────
